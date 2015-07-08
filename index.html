@@ -1,208 +1,218 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset='utf-8'>
-<title>iOS Test</title>
-<style>
-html {height: 100%; margin-bottom: 10px; overflow-y: scroll;}
-body {color: #666; background-color: #eee; font:normal normal 100 15px/20px cambria, Serif;  text-shadow:2px 2px 10px #ccc;}
-h1 {font-size: 35px; margin-bottom: 10px; padding-top:10px; padding-bottom:5px; border-bottom: 1px solid #eb0; text-shadow:0px 0px 3px #ccc; color:#aaa;}
-h1 small {font:normal normal 100 15px/15px verdana, sans-serif; padding-left: 20px; color:#0be;}
-h2, h3, h4 {margin-bottom: 5px;}
-h3{ color:#aaa; border-bottom:3px solid #aaa;}
-h4{ color:#555; background-color:#ddd; padding:5px 0px 5px 15px;}
-p {margin-top: 5px; margin-left:10px;}
-pre {background-color: #F6F6F6;}
-code {border:dashed 1px #aaa; padding:5px;}
-nav {font-size: 20px; text-align:right; margin-bottom:20px; display:block; width:100%; float:right;}
-nav a {margin: 10px; padding:5px; color: #c00; text-shadow:2px 2px 10px #555; text-align:right; }
-nav a:hover {color: #0be; border-top:3px solid #0be;  }
-
-
-img{box-shadow: 2px 2px 5px #aaa; margin:5px;}
-img a {border:0px solid #fff;}
-a {color:#c00; text-decoration: none; cursor: pointer;	cursor: hand;}
-a:hover {color: #0be; }
-
-
-#allcontent {margin: 0 auto; width: 80%;}
-#footer {color: #888; border-top:1px dotted #888; text-align:center;}
-.selectednav {color:#0be;}
-</style>		
-
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"> </script>
-<script type="text/javascript" src="js/jquery.fontSize.js"> </script>
-
-<script type="text/javascript"> 
-$(document).ready(function(){
-		$('.increase').fontSize({
-action: "up",
-elements: "#content",
-max: 36
-});
-
-		$('.decrease').fontSize({
-action: 'down',
-elements: "#content"
-});
-		})
-</script> 
-<script type="text/javascript">
-$(document).ready(function(){
-		$(".page").hide();
-		$("#page0").fadeIn(1000);
-
-		$("#link0").click(function(){
-			$(".page").hide();
-			$("#page0").fadeIn();
-			});
-
-		$("#link1").click(function(){
-			$(".page").hide();
-			$("#page1").fadeIn();
-			});
-
-		$("#link2").click(function(){
-			$(".page").hide();
-			$("#page2").fadeIn(2000);
-			});
-
-		$("#link3").click(function(){
-			$(".page").hide();
-			$("#page3").slideDown()
-			});
-
-		$("#link4").click(function(){
-				$(".page").hide();
-				$("#page4").fadeIn(1500);
-				});
-});
-</script>
-
-</head>
-
-<body>
-<div id="allcontent">
-<div id="headandnav">
-<img src="img/logo.png"></img>
-<h1>gpxj iOS<small>[ <a href="http://www.lechaogu.com">gpxj Site</a> ]</small>
-<a href="#" class="increase box" title="Increase text size">A+</a>
-<a href="#" class="decrease box" title="Decrease Text Sise">A-</a> 
-</h1>
-<nav>
-<a id="link0">Production</a>
-<a id="link1">About</a>
-<a id="link2">Play</a>
-<a id="link3">Download</a>
-<a id="link4">Contact</a>
-</nav>
-</div>
-
-<div id="content">
-
-<div id="page0" class="page">
-<h2>Production</h2>
-<p>
-<h4>Install "Stock advantage"</h4>
-
-</p>
-<div>
-<h4>iOS Version 0.1.2</h4>
-<ul>
-<li>
-    Left Menu.
-</li>
-</ul>
-</div>
-<div>
-<a href="itms-services:///?action=download-manifest&url=https://gpxj.github.io/gpxj/0.1.2/gpxj.plist"><img src=img/iphone_btn_down.jpg /></a>
-</div>
-
-</p>
-<div>
-<h4>iOS Version 0.1.1</h4>
-<ul>
-<li>
-    Auto Update.
-</li>
-</ul>
-</div>
-<div>
-<a href="itms-services:///?action=download-manifest&url=https://gpxj.github.io/gpxj/0.1.1/gpxj.plist"><img src=img/iphone_btn_down.jpg /></a>
-</div>
-
-<div>
-<h4>iOS Version 0.1.0</h4>
-<ul>
-<li>
-First Version.
-</li>
-</ul>
-</div>
-<h4>QR Code</h4>
-<div>
-<img src="img/qr.png" />
-</div>
-</div>
-
-<div id="page1" class="page">
-
-<h2>About gpxj</h2>
-<p>
-<h4>About</h4>
-Stock advantage
-<p />
-Thanks to 
-<p />
-<a href="https://cocoapods.org">cocoapods</a>
-<p />
-<a href="https://github.com/nicklockwood/iVersion">iVersion</a>
-<p />
-<a href="https://github.com/mamaral/Onboard">Onboard</a>
-<p />
-All copyright turns over to the original author.
-</p>
-<h4>Developed by</h4>
-<p>jiaxianhua and wolegecao (<a href="http://www.lechaogu.com">http://www.lechaogu.com</a>
-</p>
-</div>
-
-
-<div id="page2"  class="page">
-<h2>Usage</h2>
-<p>
-<h4>Get ipa</h4>
-</div>
-
-
-<div id="page3" class="page"> 
-<h2>FREE Download!!</h2>
-<h4>Download this file, by right-click and save as</h4>
-<ul>
-<li><a href="https://gpxj.github.io/gpxj/gpxj.ipa">gpxj.ipa</a> Don't click on this link; instead right-click and save-as.</li>
-</ul>
-<h4>Install</h4>
-<ul>
-<li>iOS version installation method:</li>
-<ul>
-<li>
-If you can't get online installation, please install through iTunes from your computer.
-</li> 
-</ul>
-</ul>
-</div>
-
-<div id="page4" class="page"> 
-<h2>Contact gpxj</h2>
-<h4>Website</h4>
-<p>Official Home Page(<a href="http://www.lechaogu.com">http://www.lechaogu.com</a>)</p>
-<h4>Email</h4>
-<p>Please sent E-mail to jiaxianhua#gmail.com or 254585233#qq.com</p>
-</div>
-<div id="footer">深圳市利讯互联网金融服务有限公司 粤ICP备15042797号-1
-Copyright ©2015 All rights reserved
-</div>
-</div>
-</body>
+    <head>
+        <meta charset='utf-8'>
+            <title>iOS Test</title>
+            <style>
+                html {height: 100%; margin-bottom: 10px; overflow-y: scroll;}
+                body {color: #666; background-color: #eee; font:normal normal 100 15px/20px cambria, Serif;  text-shadow:2px 2px 10px #ccc;}
+                h1 {font-size: 35px; margin-bottom: 10px; padding-top:10px; padding-bottom:5px; border-bottom: 1px solid #eb0; text-shadow:0px 0px 3px #ccc; color:#aaa;}
+                h1 small {font:normal normal 100 15px/15px verdana, sans-serif; padding-left: 20px; color:#0be;}
+                h2, h3, h4 {margin-bottom: 5px;}
+                h3{ color:#aaa; border-bottom:3px solid #aaa;}
+                h4{ color:#555; background-color:#ddd; padding:5px 0px 5px 15px;}
+                p {margin-top: 5px; margin-left:10px;}
+                pre {background-color: #F6F6F6;}
+                code {border:dashed 1px #aaa; padding:5px;}
+                nav {font-size: 20px; text-align:right; margin-bottom:20px; display:block; width:100%; float:right;}
+                nav a {margin: 10px; padding:5px; color: #c00; text-shadow:2px 2px 10px #555; text-align:right; }
+                nav a:hover {color: #0be; border-top:3px solid #0be;  }
+                
+                
+                img{box-shadow: 2px 2px 5px #aaa; margin:5px;}
+                img a {border:0px solid #fff;}
+                a {color:#c00; text-decoration: none; cursor: pointer;	cursor: hand;}
+                a:hover {color: #0be; }
+                
+                
+                #allcontent {margin: 0 auto; width: 80%;}
+                #footer {color: #888; border-top:1px dotted #888; text-align:center;}
+                .selectednav {color:#0be;}
+                </style>
+            
+            <script type="text/javascript" src="js/jquery-1.9.1.min.js"> </script>
+            <script type="text/javascript" src="js/jquery.fontSize.js"> </script>
+            
+            <script type="text/javascript">
+                $(document).ready(function(){
+                                  $('.increase').fontSize({
+                                                          action: "up",
+                                                          elements: "#content",
+                                                          max: 36
+                                                          });
+                                  
+                                  $('.decrease').fontSize({
+                                                          action: 'down',
+                                                          elements: "#content"
+                                                          });
+                                  })
+                </script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                                  $(".page").hide();
+                                  $("#page0").fadeIn(1000);
+                                  
+                                  $("#link0").click(function(){
+                                                    $(".page").hide();
+                                                    $("#page0").fadeIn();
+                                                    });
+                                  
+                                  $("#link1").click(function(){
+                                                    $(".page").hide();
+                                                    $("#page1").fadeIn();
+                                                    });
+                                  
+                                  $("#link2").click(function(){
+                                                    $(".page").hide();
+                                                    $("#page2").fadeIn(2000);
+                                                    });
+                                  
+                                  $("#link3").click(function(){
+                                                    $(".page").hide();
+                                                    $("#page3").slideDown()
+                                                    });
+                                  
+                                  $("#link4").click(function(){
+                                                    $(".page").hide();
+                                                    $("#page4").fadeIn(1500);
+                                                    });
+                                  });
+                </script>
+            
+    </head>
+    
+    <body>
+        <div id="allcontent">
+            <div id="headandnav">
+                <img src="img/logo.png"></img>
+                <h1>gpxj iOS<small>[ <a href="http://www.lechaogu.com">gpxj Site</a> ]</small>
+                    <a href="#" class="increase box" title="Increase text size">A+</a>
+                    <a href="#" class="decrease box" title="Decrease Text Sise">A-</a>
+                </h1>
+                <nav>
+                    <a id="link0">Production</a>
+                    <a id="link1">About</a>
+                    <a id="link2">Play</a>
+                    <a id="link3">Download</a>
+                    <a id="link4">Contact</a>
+                </nav>
+            </div>
+            
+            <div id="content">
+                
+                <div id="page0" class="page">
+                    <h2>Production</h2>
+                    <p>
+                    <h4>Install "Stock advantage"</h4>
+                    
+                    <div>
+                        <h4>iOS Version 0.1.2 (2015.07.08)</h4>
+                        <ul>
+                            <li>
+                                Left Menu.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="itms-services:///?action=download-manifest&url=https://gpxj.github.io/gpxj/gpxj.plist"><img src=img/iphone_btn_down.jpg /></a>
+                    </div>
+                    
+                    <h4>QR Code</h4>
+                    <div>
+                        <img src="img/qr.png" />
+                    </div>
+                </div>
+                
+                <div id="page1" class="page">
+                    
+                    <h2>About gpxj</h2>
+                    <p>
+                    <h4>About</h4>
+                    Stock advantage
+                    <p />
+                    Thanks to 
+                    <p />
+                    <a href="https://cocoapods.org">cocoapods</a>
+                    <p />
+                    <a href="https://github.com/nicklockwood/iVersion">iVersion</a>
+                    <p />
+                    <a href="https://github.com/mamaral/Onboard">Onboard</a>
+                    <p />
+                    All copyright turns over to the original author.
+                    </p>
+                    <h4>Developed by</h4>
+                    <p>jiaxianhua and wolegecao (<a href="http://www.lechaogu.com">http://www.lechaogu.com</a>
+                    </p>
+                </div>
+                
+                
+                <div id="page2"  class="page">
+                    <h2>History</h2>
+                    </p>
+                    <div>
+                        <h4>iOS Version 0.1.2 (2015.07.08)</h4>
+                        <ul>
+                            <li>
+                                Left Menu.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="itms-services:///?action=download-manifest&url=https://gpxj.github.io/gpxj/0.1.2/gpxj.plist"><img src=img/iphone_btn_down.jpg /></a>
+                    </div>
+                    
+                    </p>
+                    <div>
+                        <h4>iOS Version 0.1.1 (2015.07.07)</h4>
+                        <ul>
+                            <li>
+                                Auto Update.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="itms-services:///?action=download-manifest&url=https://gpxj.github.io/gpxj/0.1.1/gpxj.plist"><img src=img/iphone_btn_down.jpg /></a>
+                    </div>
+                    
+                    <div>
+                        <h4>iOS Version 0.1.0 (2015.07.06)</h4>
+                        <ul>
+                            <li>
+                                First Version.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div id="page3" class="page"> 
+                    <h2>FREE Download!!</h2>
+                    <h4>Download this file, by right-click and save as</h4>
+                    <ul>
+                        <li><a href="https://gpxj.github.io/gpxj/gpxj.ipa">gpxj.ipa</a> Don't click on this link; instead right-click and save-as.</li>
+                    </ul>
+                    <h4>Install</h4>
+                    <ul>
+                        <li>iOS version installation method:</li>
+                        <ul>
+                            <li>
+                                If you can't get online installation, please install through iTunes from your computer.
+                            </li> 
+                        </ul>
+                    </ul>
+                </div>
+                
+                <div id="page4" class="page"> 
+                    <h2>Contact gpxj</h2>
+                    <h4>Website</h4>
+                    <p>Official Home Page(<a href="http://www.lechaogu.com">http://www.lechaogu.com</a>)</p>
+                    <h4>Email</h4>
+                    <p>Please sent E-mail to jiaxianhua#gmail.com or 254585233#qq.com</p>
+                </div>
+                <div id="footer">深圳市利讯互联网金融服务有限公司 粤ICP备15042797号-1
+                    Copyright ©2015 All rights reserved
+                </div>
+            </div>
+    </body>
 </html>
 
