@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0.1.0</key>
+	<array>
+		<string>First Version.</string>
+	</array>
+	<key>0.1.1</key>
+	<array>
+		<string>Auto Update.</string>
+	</array>
+	<key>0.1.2</key>
+	<array>
+		<string>LeftMenu</string>
+	</array>
+	<key>0.1.3</key>
+	<array>
+		<string>Change LeftMenu to REFrostedViewController.</string>
+	</array>
+	<key>0.1.4</key>
+	<array>
+		<string>Time-Sharing Plans Test.</string>
+	</array>
+	<key>0.1.5</key>
+	<array>
+		<string>Update Time-Sharing Plans Test.</string>
+	</array>
+</dict>
+</plist>

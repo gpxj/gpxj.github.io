@@ -26,5 +26,9 @@
 	<array>
 		<string>Update Time-Sharing Plans Test.</string>
 	</array>
+	<key>0.1.6</key>
+	<array>
+		<string>K Line.</string>
+	</array>
 </dict>
 </plist>
