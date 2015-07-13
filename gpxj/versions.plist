@@ -30,5 +30,9 @@
 	<array>
 		<string>K Line.</string>
 	</array>
+	<key>0.1.7</key>
+	<array>
+		<string>Send SMS.</string>
+	</array>
 </dict>
 </plist>
