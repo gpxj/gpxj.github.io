@@ -38,5 +38,9 @@
 	<array>
 		<string>Update Address.</string>
 	</array>
+	<key>0.1.9</key>
+	<array>
+		<string>Login &amp; Sign up.</string>
+	</array>
 </dict>
 </plist>
