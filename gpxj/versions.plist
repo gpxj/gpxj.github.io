@@ -34,5 +34,9 @@
 	<array>
 		<string>Send SMS.</string>
 	</array>
+	<key>0.1.8</key>
+	<array>
+		<string>Update Address.</string>
+	</array>
 </dict>
 </plist>
